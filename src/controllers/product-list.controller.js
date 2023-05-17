@@ -25,7 +25,7 @@ const getProductList = catchAsync(async (req, res) => {
 });
 
 const updateProductList = catchAsync(async (req, res) => {
-  const productList = await productListService.updateproductListsById(req.params.id, req.body);
+  const productList = await productListService.updateProductListById(req.params.id, req.body);
   res.send(productList);
 });
 
